@@ -1,4 +1,4 @@
-import hello from "./menu";
+import hello from "./menuPage";
 import "./styles.css";
 
 console.log(123);
