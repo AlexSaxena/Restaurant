@@ -1,5 +1,6 @@
 import hello from "./menuPage";
 import "./styles/main.css";
+import bgBurger from "./assets/bgBurger.jpg";
 
 let contentDiv = document.querySelector(".content-div");
 contentDiv.innerHTML = "";
@@ -11,7 +12,7 @@ headerDiv.className = "header-div";
 
 const navTitle = document.createElement("H1");
 navTitle.setAttribute("id", "nav-title");
-const textNode = document.createTextNode("Cool Food Palace");
+const textNode = document.createTextNode("The Burger Palace");
 navTitle.appendChild(textNode);
 
 let navSection = document.createElement("nav");
@@ -37,6 +38,12 @@ let btnContact = document.createElement("button");
 btnContact.className = "btn-main";
 btnContact.textContent = "Contact Us!";
 mainDiv.append(btnOrder, btnContact);
+
+mainDiv.style.backgroundImage = "url(bgBurger.jpg)";
+mainDiv.style.backgroundSize = "stretch";
+mainDiv.style.backgroundRepeat = "no-repeat";
+mainDiv.style.backgroundPosition = "center bottom";
+mainDiv.style.backgroundAttachment = "fixed";
 
 let footerDiv = document.createElement("footer");
 footerDiv.className = "footer-div";

@@ -8,12 +8,17 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: [].js,
+    assetModuleFilename: "[name][ext]",
   },
   module: {
     rules: [
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|jpg|jpeg|svg|gif)$/i,
+        type: "asset/resource",
       },
     ],
   },
