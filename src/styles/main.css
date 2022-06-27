@@ -16,16 +16,19 @@
   justify-content: flex-end;
   padding: 1rem 4rem 1rem 4rem;
   box-shadow: 0 5px 10px #ddd;
-  background-color: lightcoral;
+  background-color: lightgrey;
+  border-bottom: solid black 5px;
 }
 #nav-title {
   color: #000;
   margin-right: auto;
+  text-decoration: 2px underline;
 }
 header li {
   list-style: none;
   display: inline-block;
   padding: 0 20px;
+  font-size: 1.5rem;
 }
 header a {
   text-decoration: none;
@@ -43,13 +46,22 @@ header a:hover {
   gap: 5rem;
 }
 .btn-main {
-  font-size: 1rem;
-  background-color: lightskyblue;
-  padding: 1rem;
-  border-radius: 10%;
+  width: 180px;
+  height: 80px;
+  border: none;
+  border: solid 2px rgb(255, 255, 255);
+  color: white;
+  font-weight: bolder;
+  border-radius: 5px;
+  background: hsla(9, 100%, 65%, 0.5);
+  font-size: 25px;
+  transition-duration: 0.8s;
 }
+
 .btn-main:hover {
-  border-color: lightcoral;
+  background: hsla(9, 100%, 65%, 1);
+  color: black;
+  cursor: pointer;
 }
 .footer-div {
   margin-top: auto;
