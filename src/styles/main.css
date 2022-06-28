@@ -38,8 +38,10 @@ header a {
 header a:hover {
   color: #96c5c1;
 }
-.main-div {
+main {
   flex-grow: 1;
+}
+.main-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,4 +73,43 @@ header a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.menu-title {
+  color: white;
+  text-decoration: underline;
+  padding: 1rem;
+}
+.menu-div {
+  min-height: 70vh;
+  border: solid hsla(0, 100%, 55%, 0.8) 0.8rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  gap: 6rem;
+  border-radius: 4%;
+}
+.menu-item {
+  border: solid white 1px;
+  border-radius: 5%;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.item-title {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  padding-bottom: 1rem;
+}
+.item-content {
+  font-size: 1rem;
 }
