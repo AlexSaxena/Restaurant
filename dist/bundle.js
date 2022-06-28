@@ -110,13 +110,43 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction renderFooter() {\r\n  let footerDiv = document.createElement(\"footer\");\r\n  footerDiv.className = \"footer-div\";\r\n  footerDiv.innerHTML = \"Footer\";\r\n  return footerDiv;\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderFooter);\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/footer.js?");
+
+/***/ }),
+
+/***/ "./src/header.js":
+/*!***********************!*\
+  !*** ./src/header.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction renderHeader() {\r\n  let headerDiv = document.createElement(\"header\");\r\n  headerDiv.innerHTML = \"\";\r\n  headerDiv.className = \"header-div\";\r\n\r\n  const navTitle = document.createElement(\"H1\");\r\n  navTitle.setAttribute(\"id\", \"nav-title\");\r\n  const textNode = document.createTextNode(\"The Burger Palace\");\r\n  navTitle.appendChild(textNode);\r\n\r\n  let navSection = document.createElement(\"nav\");\r\n  let listStart = document.createElement(\"ul\");\r\n  let listelement1 = document.createElement(\"li\");\r\n  let listelement2 = document.createElement(\"li\");\r\n  let listelement3 = document.createElement(\"li\");\r\n  listelement1.innerHTML = '<a href=\"#\">Home</a>';\r\n  listelement2.innerHTML = '<a href=\"#\">Menu</a>';\r\n  listelement3.innerHTML = '<a href=\"#\">Contact</a>';\r\n  listStart.append(listelement1, listelement2, listelement3);\r\n\r\n  navSection.append(listStart);\r\n  headerDiv.append(navTitle, navSection);\r\n\r\n  return headerDiv;\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderHeader);\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/header.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _menuPage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menuPage */ \"./src/menuPage.js\");\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _assets_bgBurger_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/bgBurger.jpg */ \"./src/assets/bgBurger.jpg\");\n\r\n\r\n\r\n\r\nlet contentDiv = document.querySelector(\".content-div\");\r\ncontentDiv.innerHTML = \"\";\r\nconsole.log(contentDiv);\r\n\r\nlet headerDiv = document.createElement(\"header\");\r\nheaderDiv.innerHTML = \"\";\r\nheaderDiv.className = \"header-div\";\r\n\r\nconst navTitle = document.createElement(\"H1\");\r\nnavTitle.setAttribute(\"id\", \"nav-title\");\r\nconst textNode = document.createTextNode(\"The Burger Palace\");\r\nnavTitle.appendChild(textNode);\r\n\r\nlet navSection = document.createElement(\"nav\");\r\nlet listStart = document.createElement(\"ul\");\r\nlet listelement1 = document.createElement(\"li\");\r\nlet listelement2 = document.createElement(\"li\");\r\nlet listelement3 = document.createElement(\"li\");\r\nlistelement1.innerHTML = '<a href=\"#\">Home</a>';\r\nlistelement2.innerHTML = '<a href=\"#\">Menu</a>';\r\nlistelement3.innerHTML = '<a href=\"#\">Contact</a>';\r\nlistStart.append(listelement1, listelement2, listelement3);\r\n\r\nnavSection.append(listStart);\r\nheaderDiv.append(navTitle, navSection);\r\nconsole.log(headerDiv);\r\n\r\nlet mainDiv = document.createElement(\"main\");\r\nmainDiv.className = \"main-div\";\r\nlet btnOrder = document.createElement(\"button\");\r\nbtnOrder.className = \"btn-main\";\r\nbtnOrder.textContent = \"Order Food!\";\r\nlet btnContact = document.createElement(\"button\");\r\nbtnContact.className = \"btn-main\";\r\nbtnContact.textContent = \"Contact Us!\";\r\nmainDiv.append(btnOrder, btnContact);\r\n\r\nmainDiv.style.backgroundImage = \"url(bgBurger.jpg)\";\r\nmainDiv.style.backgroundSize = \"stretch\";\r\nmainDiv.style.backgroundRepeat = \"no-repeat\";\r\nmainDiv.style.backgroundPosition = \"center bottom\";\r\nmainDiv.style.backgroundAttachment = \"fixed\";\r\n\r\nlet footerDiv = document.createElement(\"footer\");\r\nfooterDiv.className = \"footer-div\";\r\nfooterDiv.innerHTML = \"Footer\";\r\n\r\ncontentDiv.append(headerDiv, mainDiv, footerDiv);\r\n\r\nconsole.log(123);\r\nconsole.log((0,_menuPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _menuPage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menuPage */ \"./src/menuPage.js\");\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n/* harmony import */ var _introPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./introPage */ \"./src/introPage.js\");\n/* harmony import */ var _assets_bgBurger_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/bgBurger.jpg */ \"./src/assets/bgBurger.jpg\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nconsole.log(123);\r\nconsole.log((0,_menuPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\r\n\r\nlet contentDiv = document.querySelector(\".content-div\");\r\n\r\ncontentDiv.append((0,_header__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(), (0,_introPage__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(), (0,_footer__WEBPACK_IMPORTED_MODULE_3__[\"default\"])());\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/introPage.js":
+/*!**************************!*\
+  !*** ./src/introPage.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction renderIntroPage() {\r\n  let mainDiv = document.createElement(\"main\");\r\n  mainDiv.className = \"main-div\";\r\n  let btnOrder = document.createElement(\"button\");\r\n  btnOrder.className = \"btn-main\";\r\n  btnOrder.textContent = \"Order Food!\";\r\n  let btnContact = document.createElement(\"button\");\r\n  btnContact.className = \"btn-main\";\r\n  btnContact.textContent = \"Contact Us!\";\r\n  mainDiv.append(btnOrder, btnContact);\r\n\r\n  mainDiv.style.backgroundImage = \"url(bgBurger.jpg)\";\r\n  mainDiv.style.backgroundSize = \"stretch\";\r\n  mainDiv.style.backgroundRepeat = \"no-repeat\";\r\n  mainDiv.style.backgroundPosition = \"center bottom\";\r\n  mainDiv.style.backgroundAttachment = \"fixed\";\r\n\r\n  return mainDiv;\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderIntroPage);\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/introPage.js?");
 
 /***/ }),
 
