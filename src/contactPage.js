@@ -181,3 +181,5 @@ function createForm() {
 
   return formWrapper;
 }
+
+export default renderContactPage;
