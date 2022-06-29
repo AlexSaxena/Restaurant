@@ -15,9 +15,52 @@ function renderContactPage() {
   let formIntro = document.createElement("h1");
   formIntro.className = "form-intro";
   formIntro.textContent = "Feedback";
+
   let newForm = createForm();
- let 
+  let infoWrapper = createInfoSection();
+
+  mainDiv.append(contactWrapper);
   return mainDiv;
+}
+
+function createInfoSection() {
+  let contactInfoWrapper = document.createElement("div");
+  contactInfoWrapper.className = "contact-info";
+
+  let contactTitle = document.createElement("h2");
+  contactTitle.className = "contact-title";
+  let contactTitleNode = document.createTextNode("Contact Us!");
+  contactTitle.appendChild(contactTitleNode);
+
+  let telDiv = document.createElement("div");
+  telDiv.className = "tel-div";
+
+  let telTitle = document.createElement("p");
+  telTitle.className = "tel-title";
+  let telNode = document.createTextNode("Telephone Nr.");
+  telTitle.appendChild(telNode);
+
+  let telnrPara = document.createElement("p");
+  telnrPara.className = "telnr-p";
+  let telnrparaNode = document.createTextNode("+123-123456789");
+  telnrPara.appendChild(telnrparaNode);
+
+  let adressDiv = document.createElement("div");
+  adressDiv.className = "adress-div";
+
+  let adressTitle = document.createElement("p");
+  adressTitle.className = "adress-title";
+  let adressTitleNode = document.createTextNode("Local Adress");
+  adressTitle.appendChild(adressTitleNode);
+
+  let adressPara = document.createElement("p");
+  adressPara.className = "adress-p";
+  let adressParaNode = document.createTextNode("Fake Street 123");
+  adressPara.appendChild(adressParaNode);
+
+  contactInfoWrapper.append(contactTitle, telDiv, adressDiv);
+
+  return contactInfoWrapper;
 }
 
 function createForm() {
