@@ -1,25 +1,25 @@
-// Btn prevent submit
-// document
-//   .getElementById("contact-btn")
-//   .addEventListener("click", function (event) {
-//     event.preventDefault();
-//   });
+// Contact Page
 
 function renderContactPage() {
   let mainDiv = document.createElement("main");
   mainDiv.className = "main-contact";
+
   let contactWrapper = document.createElement("div");
   contactWrapper.className = "contact-wrapper";
-  let formWrapper = document.createElement("div");
-  formWrapper.className = "form-wrapper";
-  let formIntro = document.createElement("h1");
-  formIntro.className = "form-intro";
-  formIntro.textContent = "Feedback";
+
+  // let formWrapper = document.createElement("div");
+  // formWrapper.className = "form-wrapper";
+
+  // let formIntro = document.createElement("h1");
+  // formIntro.className = "form-intro";
+  // formIntro.textContent = "Feedback";
 
   let newForm = createForm();
   let infoWrapper = createInfoSection();
 
+  contactWrapper.append(newForm, infoWrapper);
   mainDiv.append(contactWrapper);
+
   return mainDiv;
 }
 
@@ -45,6 +45,8 @@ function createInfoSection() {
   let telnrparaNode = document.createTextNode("+123-123456789");
   telnrPara.appendChild(telnrparaNode);
 
+  telDiv.append(telTitle, telnrPara);
+
   let adressDiv = document.createElement("div");
   adressDiv.className = "adress-div";
 
@@ -58,12 +60,25 @@ function createInfoSection() {
   let adressParaNode = document.createTextNode("Fake Street 123");
   adressPara.appendChild(adressParaNode);
 
+  adressDiv.append(adressTitle, adressPara);
+
   contactInfoWrapper.append(contactTitle, telDiv, adressDiv);
 
   return contactInfoWrapper;
 }
 
 function createForm() {
+  // Main Form wrapper
+  let formWrapper = document.createElement("div");
+  formWrapper.className = "form-wrapper";
+
+  // Heading for form
+  let formIntro = document.createElement("h1");
+  formIntro.className = "form-intro";
+  let formIntroNode = document.createTextNode("Feedback");
+  formIntro.appendChild(formIntroNode);
+
+  // Form
   let contactForm = document.createElement("form");
   contactForm.setAttribute("method", "post");
   contactForm.setAttribute("action", "#");
@@ -162,5 +177,7 @@ function createForm() {
     btnSubmitForm
   );
 
-  return contactForm;
+  formWrapper.append(formIntro, contactForm);
+
+  return formWrapper;
 }
