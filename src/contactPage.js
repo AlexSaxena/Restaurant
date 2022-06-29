@@ -7,13 +7,6 @@ function renderContactPage() {
   let contactWrapper = document.createElement("div");
   contactWrapper.className = "contact-wrapper";
 
-  // let formWrapper = document.createElement("div");
-  // formWrapper.className = "form-wrapper";
-
-  // let formIntro = document.createElement("h1");
-  // formIntro.className = "form-intro";
-  // formIntro.textContent = "Feedback";
-
   let newForm = createForm();
   let infoWrapper = createInfoSection();
 
@@ -162,7 +155,7 @@ function createForm() {
   btnSubmitForm.setAttribute("type", "submit");
   btnSubmitForm.setAttribute("value", "Submit");
 
-  //Append Form
+  // Append Form
   contactForm.append(
     labelFname,
     inputFName,
