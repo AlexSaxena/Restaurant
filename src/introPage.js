@@ -2,10 +2,10 @@ function renderIntroPage() {
   let mainDiv = document.createElement("main");
   mainDiv.className = "main-div";
   let btnOrder = document.createElement("button");
-  btnOrder.className = "btn-main";
+  btnOrder.className = "btn-main btn-order-food";
   btnOrder.textContent = "Order Food!";
   let btnContact = document.createElement("button");
-  btnContact.className = "btn-main";
+  btnContact.className = "btn-main btn-contact-us";
   btnContact.textContent = "Contact Us!";
   mainDiv.append(btnOrder, btnContact);
 
