@@ -9,7 +9,7 @@ function renderMenuPage() {
 
   let item1 = createItem(
     "The Classic",
-    "Our Classic burger never changin always Delicious!"
+    "Our Classic burger never changing always Delicious!"
   );
   let item2 = createItem(
     "Cheese Burger",
@@ -21,7 +21,7 @@ function renderMenuPage() {
   );
   let item4 = createItem(
     "Jalapeno Special",
-    "Our Classic burger never changin always Delicious!"
+    "Our Classic burger with some extra Spice!"
   );
   let item5 = createItem(
     "The 10k Cal Burger",
