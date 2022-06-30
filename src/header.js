@@ -13,9 +13,9 @@ function renderHeader() {
   let listelement1 = document.createElement("li");
   let listelement2 = document.createElement("li");
   let listelement3 = document.createElement("li");
-  listelement1.innerHTML = '<a href="#">Home</a>';
-  listelement2.innerHTML = '<a href="#">Menu</a>';
-  listelement3.innerHTML = '<a href="#">Contact</a>';
+  listelement1.innerHTML = '<a class="btn-home" href="#">Home</a>';
+  listelement2.innerHTML = '<a class="btn-menu" href="#">Menu</a>';
+  listelement3.innerHTML = '<a class="btn-contact" href="#">Contact</a>';
   listStart.append(listelement1, listelement2, listelement3);
 
   navSection.append(listStart);
