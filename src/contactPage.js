@@ -97,6 +97,10 @@ function createForm() {
   labelCategory.setAttribute("for", "Category");
   labelCategory.innerHTML = "Category";
 
+  let labelComment = document.createElement("label");
+  labelComment.setAttribute("for", "comment");
+  labelComment.innerHTML = "Comments";
+
   // Create an input element for First Name
   let inputFName = document.createElement("input");
   inputFName.setAttribute("type", "text");
@@ -150,6 +154,13 @@ function createForm() {
   inputCategory.add(opt2, null);
   inputCategory.add(opt3, null);
 
+  // Create an input element for Tel-Number
+  let inputComment = document.createElement("textarea");
+  inputComment.setAttribute("id", "inputComment");
+  inputComment.setAttribute("name", "comment");
+  inputComment.setAttribute("placeholder", "Enter A Comment....");
+  inputComment.setAttribute("rows", "3");
+
   // Create a submit button
   let btnSubmitForm = document.createElement("input");
   btnSubmitForm.setAttribute("type", "submit");
@@ -167,6 +178,8 @@ function createForm() {
     inputTelnr,
     labelCategory,
     inputCategory,
+    labelComment,
+    inputComment,
     btnSubmitForm
   );
 

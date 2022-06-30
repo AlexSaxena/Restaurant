@@ -140,6 +140,7 @@ form {
 }
 input[type="text"],
 select,
+textarea,
 input[type="email"],
 input[type="tel"] {
   width: 100%;
