@@ -16,6 +16,7 @@ let btnHome = document.querySelector(".btn-home");
 let btnMenu = document.querySelector(".btn-menu");
 let btnContact = document.querySelector(".btn-contact");
 let btnContactUs = document.querySelector(".btn-contact-us");
+let btnOrderFood = document.querySelector(".btn-order-food");
 
 btnHome.addEventListener("click", () => {
   contentDiv.replaceChild(renderIntroPage(), mainDiv);
@@ -34,5 +35,10 @@ btnContact.addEventListener("click", () => {
 
 btnContactUs.addEventListener("click", () => {
   contentDiv.replaceChild(renderContactPage(), mainDiv);
+  mainDiv = contentDiv.children[1];
+});
+
+btnOrderFood.addEventListener("click", () => {
+  contentDiv.replaceChild(renderMenuPage(), mainDiv);
   mainDiv = contentDiv.children[1];
 });
