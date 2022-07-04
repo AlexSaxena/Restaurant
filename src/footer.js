@@ -1,7 +1,7 @@
 function renderFooter() {
   let footerDiv = document.createElement("footer");
   footerDiv.className = "footer-div";
-  footerDiv.innerHTML = "Footer";
+  footerDiv.innerHTML = "Created By: Alex Saxena";
   return footerDiv;
 }
 
